@@ -1,0 +1,473 @@
+/* Comman styling, Font Variables, Color Variables declared */
+    * {
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        list-style: none;
+    }
+
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: var(--bodyBackgroundColor);
+        font-family: Poppins-Regular;
+        position: relative;
+    }
+    img{
+        width: 100%;
+    }
+    a {
+        text-decoration: none;
+        color: var(--link);
+    }
+   
+    :root {
+        /* Light Mode Color Pallet */
+        --bodyBackgroundColor: #ECF0F3;
+        --link_SubTitle_Color: #3c3e41;
+        --TitleColor: #1e2125;
+        --unHoverLink: #878e99;
+        --link: #0d1013;
+        --color_primary: #ff014f;
+        --color_subtitle: #f9004d;
+        --contact_input_bg: #fdfefe;
+        --contact-input-border: #dadada;
+        --white: white;
+        
+        --neumorphism-Light-background: linear-gradient(145deg, #e2e8ec, #ffffff);
+        --neumorphism-Light-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+
+        /* Light Mode Color Pallet */
+        --dark_mode_bg: #212428;
+        --dark_mode_content: #878e99;
+        --dark_mode_title:  #E4E6EA;
+        --dark_mode_link: #c4cfde;;
+        --dark_mode_shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; 
+    }
+
+    @font-face {
+        font-family: font-primary;
+        font-weight: 400;
+        src: url('/Assets/typography_Fonts/Poppins/Poppins-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: font-primary-medium;
+        font-weight: 500;
+        src: url('/Assets/typography_Fonts/Poppins/Poppins-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: font-primary-bold;
+        font-weight: 700;
+        src: url('/Assets/typography_Fonts/Poppins/Poppins-Bold.ttf');
+    }
+
+    @font-face {
+        font-family: font-secoundry;
+        font-weight: 400;
+        src: url('/Assets/typography_Fonts/Montserrat/static/Montserrat-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: font-secoundry-medium;
+        font-weight: 500;
+        src: url('/Assets/typography_Fonts/Montserrat/static/Montserrat-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: font-secoundry-bold;
+        font-weight: 700;
+        src: url('/Assets/typography_Fonts/Montserrat/static/Montserrat-Bold.ttf');
+    }
+
+    .font-primary{
+        font-family: font-primary;
+    }
+    .font-secoundry{
+        font-family: font-secoundry;
+    }
+    .font-secoundry-medium{
+        font-family: font-secoundry-medium;
+    }
+    .font-secoundry-bold{
+        font-family: font-secoundry-bold;
+    }
+    .section-specing{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .neumorphism-effect{
+        background: var(--neumorphism-Light-background);
+        box-shadow: var(--neumorphism-Light-shadow);
+    }
+    .contact-border-radius{
+        border-radius: 10px;
+    }
+    .sticky-whats-Up{
+        font-size: 28px;
+        width: 50px; height: 50px;
+        border-radius: 50%;
+        color: #28D146;
+        background: var(--neumorphism-Light-background);
+        box-shadow: var(--neumorphism-Light-shadow);
+        position: fixed; bottom: 50px; right: 30px;
+        display: flex; align-items: center; justify-content: center;
+        text-align: center;
+    }
+    .sticky-whats-Up:hover, .sticky-whats-Up:active{
+        color: var(--color_primary);
+    }
+/* Comman styling, Font Variables, Color Variables declared */
+
+/* ===== Hero Section CSS ===== */ 
+    nav{
+        height: 60px;
+        transition: all 0.5s;
+    }
+    .active-NavBar{
+        height: 80px;
+        z-index: 999;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        backdrop-filter: blur(5px);
+        background-color: var(--bodyBackgroundColor);
+        box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.1);
+    }
+    .brand-logo:hover{
+        color: var(--color_primary);
+    }
+    /* Moblie SideBar Css */
+        .SideBar{
+            width: 100%;
+            min-height: 100vh;
+            position: absolute;
+            top: 0; right: -100%;
+            background-color: var(--white);
+            transition: all 0.5s;
+            display: none; 
+        }
+        .activeSideBar{
+            display: flex; align-items: center; justify-content: center;
+            right: 0;
+        }
+        .fa-bars-staggered,.fa-xmark{
+            cursor: pointer;
+        }
+        .fa-xmark{
+            font-size: 24px;
+            position: absolute;
+            top: 45px;
+            right: 25px;
+        }
+    /* Moblie SideBar Css */
+
+    .header_Navigation a{
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: font-secoundry, sans-serif;
+    }
+    .header_Navigation:hover li a{
+        color: var(--unHoverLink);
+    }
+    .header_Navigation:hover li a:hover{
+        color: var(--link);
+    }
+    .Hero-Subtitle{
+        font-size: 14px;
+        line-height: 21px;
+        font-family: font-secoundry-medium;
+        text-transform: uppercase;
+        color: var(--link_SubTitle_Color);
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .Hero-Title{
+        font-size: 32px;
+        line-height: 50px;
+        font-family: font-secoundry-bold;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .theme-text{
+        color: var(--color_primary);
+    }
+    .typed-cursor{
+        color: var(--color_primary);
+    }
+    .Hero-content{
+        font-size: 16px;
+        line-height: 28px;
+        font-family: font-primary;
+        color: var(--link_SubTitle_Color);
+        opacity: 0.9;
+    }
+    .hero-contact-title{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        font-family: font-secoundry-medium;
+        color: var(--link_SubTitle_Color);
+        opacity: 0.9;
+    }
+    .footer-contact-details{
+        font-family: font-secoundry;
+        opacity: 1;
+    }
+    .social-box, .Skills-box{
+        font-size: 16px;
+        border-radius: 6px;
+        width: 60px;
+        height: 60px;
+        display: flex; align-items: center; justify-content: center;
+        transition: transform 0.4s;
+    }
+    .social-box:hover{
+        color: var(--white);
+        background: var(--color_primary);
+        transform: translateY(-5px);
+    }
+    .Skills {
+        font-size: 18px;
+        cursor: auto;
+    }
+    .fa-html5{
+        color:  #FF5733;
+    }
+    .fa-css3-alt{
+        color: #264de4;
+    }
+    .fa-js{
+        color: #f0db4f;
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+        background: black;
+        opacity: 0.1;
+    }
+    .Hero-img{
+        position: relative;
+    }
+    .Hero-img::before{
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        display: inline-block;
+        border-radius: 6px;
+        z-index: -1;
+        background: var(--neumorphism-Light-background);
+        box-shadow: var(--neumorphism-Light-shadow);
+    }
+
+/* ===== Hero Section CSS ===== */ 
+
+/* Section About ME */
+    .section_sub-title{
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        color: var(--color_subtitle);
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: font-secoundry-medium;
+    }
+    .sectionTitle{
+        font-size: 28px;
+        font-weight: 900;
+        color: var(--link_SubTitle_Color);
+        text-transform: capitalize;
+        margin-bottom: 15px;
+        font-family: font-secoundry-bold;
+    }
+    .About-img{
+        width: 48px;
+        margin-bottom: 15px;
+        margin-right: auto;
+    }
+    .About-Title{
+        color: var(--TitleColor);
+        font-family: font-primary-medium;
+    }
+/* Section About ME */
+
+
+/* Contact Section */
+    .contact-img{
+        border-radius: 6px;
+        transition: scale 0.3s;
+        object-fit: cover;
+    }
+    .contact-about:hover .contact-img{
+        scale: 1.1;
+    }
+    .contactAboutTitle{
+        font-family: font-secoundry-bold;
+    }
+    .contactSubTitle{
+        font-size: 16px;
+        font-family: font-primary;
+        text-transform: capitalize;
+        color: var(--link_SubTitle_Color);
+        opacity: 0.9;
+    }
+    .footer-Contact{
+        position: relative;
+        opacity: 0.9;
+    }
+    .footer-Contact::after{
+        margin-left: 5px;
+        content: '';
+        width: 0%;
+        height: 1.5px;
+        background-color: var(--color_primary);
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.3s;
+    }
+    .footer-Contact:hover{
+        color: var(--color_primary);
+    }
+    .footer-Contact:hover.footer-Contact::after{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+        height: 180px;
+    }
+    input, textarea{
+        font-size: 14px;
+        font-family: font-secoundry;
+        border-radius: 6px;
+        color: var(--link_SubTitle_Color);
+        background-color: var(--contact_input_bg);
+        border: 2px solid var(--contact-input-border);
+    }
+
+    input:active, textarea:active{
+        border:2px solid var(--color_primary);
+    }
+    label{
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--link_SubTitle_Color);
+        font-family: font-secoundry-medium;
+    }
+    button{
+        font-size: 14px;
+        width: 100%;
+        transition: all 0.4s;
+        border-radius: 6px;
+        font-family: font-primary-medium;
+        text-transform: uppercase;
+        background: var(--neumorphism-Light-background);
+        box-shadow: var(--neumorphism-Light-shadow);
+    }
+    button:hover{
+        color: var(--white);
+        background: var(--color_primary);
+        transform: translateY(-7px);
+    }
+/* Cotnact Section */
+
+
+/* ===================================================== Media Quries Start for some external Styling Start ===================================================== */
+   
+
+    @media screen and (min-width: 768px) {
+        .section-specing{
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+       /* Hero Section */
+            nav{
+                height: 112px;
+            }
+            .SideBar{
+                display: none;
+            }
+            .Hero-Title{
+                font-size: 32px;
+                line-height: 50px;
+            }
+            .Hero-Subtitle{
+                letter-spacing: 3px;
+            }
+            .Hero-img::before{
+                width: 80%; height: 95%;
+                left: 10%;
+            }
+            .extra-mt{
+                margin-top: 130px;
+            }
+       /* Hero Section  */
+
+
+        /* About Me Section */
+            .sectionTitle{
+                font-size: 40px;
+            }
+        /* About Me Section */
+    }
+
+    @media screen and (min-width: 1024px){
+        /* Footer */
+            .first-input input{
+                width: 90%;
+            }
+            input{
+                height: 55px;
+            }
+        /* Footer */
+    }
+
+    @media screen and (min-width: 1280px) {
+        .extra-mt{
+            margin-top: 160px;
+        }
+        .Hero-content{
+            width: 600px;
+        }
+        .section-specing{
+            padding-top: 85px;
+            padding-bottom: 85px;
+        }
+
+        /* About Me Section */
+            .sectionTitle{
+                font-size: 60px;
+            }
+        /* About Me Section */
+
+        
+    }
+
+    @media screen and (min-width: 1400px) {
+        .section-specing{
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .container{
+            max-width: 1320px;
+        }
+        .Hero-Title{
+            font-size: 60px;
+            line-height: 75px;
+        }
+    }
+/* ===================================================== Media Quries Start for some external Styling Start ===================================================== */

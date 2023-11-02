@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Frontend Developer</title>
+    <link rel="stylesheet" href="/Assets/Bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Assets/style.css">
+</head>
+<body>
+    <header class="container-fluid" id="Home">
+        <div class="row">
+            <div class="col-12 px-0">
+                <nav class="d-flex align-items-center d-flex align-items-center justify-content-between px-4" id="navBar">
+                    <a href="index.html" class="font-secoundry-bold brand-logo">Love Zambre</a>
+                    <!-- Mobile View Navigation Toggle SideBar -->
+                        <i class="fas fa-bars-staggered d-md-none" onclick="openSideBar()"></i>
+                        <div class="SideBar" id="SideBar">
+                            <i class="fas fa-xmark" onclick="closeSideBar()"></i>
+                            <ul class="header_Navigation ps-0 mb-0">
+                                <li><a href="#Home" onclick="closeSideBar()">Home</a></li>
+                                <li><a href="#About" onclick="closeSideBar()">About</a></li>
+                                <li><a href="#Work" onclick="closeSideBar()">Work</a></li>
+                                <li><a href="#Contact" onclick="closeSideBar()">Contact</a></li>
+                            </ul>
+                        </div>
+                    <!-- Mobile View Navigation Toggle SideBar -->
+
+                    <!-- Desktop View Navigation -->
+                        <ul class="header_Navigation d-none d-md-flex align-items-center gap-4 ps-0 mb-0">
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Work">Work</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                        </ul>
+                    <!-- Desktop View Navigation -->
+                </nav>
+            </div>
+        </div>
+        <div class="container pt-xl-5 mt-xl-5">
+            <div class="d-flex align-items-center flex-wrap mt-lg-4">
+                <div class="HeroSection order-2 order-md-1 col-12 col-md-7 px-0">
+                    <div>
+                        <span class="Hero-Subtitle">wellcome to my world</span>
+                        <h1 class="Hero-Title">Hi, I’m <span class="theme-text text-capitalize">love zambre</span> <br> <span class="theme-text">a</span> <span class="autoType"></span></h1>
+                        <p class="Hero-content mb-5">I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
+                    </div>
+                    
+                    <div class="d-sm-flex align-items-center justify-content-between extra-mt">
+                        <div class="Find-me">
+                            <p class="text-uppercase font-primary hero-contact-title">find with me</p>
+                            <ul class="ps-0 mb-0 d-flex  gap-4">
+                                <li><a href="#" class="neumorphism-effect social-box" title="gitHub-link"><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href="#" class="neumorphism-effect social-box" title="linked-in link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="skill mt-5 mt-sm-0 pe-lg-5">
+                            <p class="text-uppercase font-primary hero-contact-title">Best skill on</p>
+                            <ul class="ps-0 mb-0 d-flex gap-4">
+                                <li class="Skills-box neumorphism-effect"><i class="fa-brands fa-html5"></i></li>
+                                <li class="Skills-box neumorphism-effect"><i class="fa-brands fa-css3-alt"></i></li>
+                                <li class="Skills-box neumorphism-effect"><i class="fa-brands fa-js"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" order-1 order-md-2 col-12 col-md-5">
+                    <div class="Hero-img mt-3 mt-md-0 mb-5 mb-md-0">
+                        <img src="/Assets/portfolio_images/3d-application-developer-working-on-project-illustration-png.webp" alt="Hero Section Image"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="line container-md mt-5 mb-0 ">
+    </header>
+
+    <!-- About Me Section -->
+        <div class="container section-specing" id="About">
+            <div class="row">
+                <div class="mb-4">
+                    <span class="section_sub-title">best skills on</span>
+                    <h2 class="sectionTitle">best skills on</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="neumorphism-effect p-4 mb-4">
+                        <div class="About-img">
+                            <img src="Assets/portfolio_images/tech-images/html5-logo-removebg-preview.png" alt="HTML logo" />
+                        </div>
+                        <div class="About-content">
+                            <h3 class="About-Title">HTML 5</h3>
+                            <p class="About-Discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quidem corporis illum hic totam sunt ea molestias? At incidunt iusto soluta atque illo doloremque sunt dolorum, sapiente blanditiis sint eos illum adipisci ipsa temporibus optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="neumorphism-effect p-4 mb-4">
+                        <div class="About-img">
+                            <img src="Assets/portfolio_images/tech-images/Css-logo-removebg-preview.png" alt="technology Image" />
+                        </div>
+                        <div class="About-content">
+                            <h3 class="About-Title">CSS 3</h3>
+                            <p class="About-Discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quidem corporis illum hic totam sunt ea molestias? At incidunt iusto soluta atque illo doloremque sunt dolorum, sapiente blanditiis sint eos illum adipisci ipsa temporibus optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="neumorphism-effect p-4 mb-4">
+                        <div class="About-img">
+                            <img src="Assets/portfolio_images/tech-images/JavaScript-logo.png" alt="JavaScript logo" />
+                        </div>
+                        <div class="About-content">
+                            <h3 class="About-Title">JavaScript</h3>
+                            <p class="About-Discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quidem corporis illum hic totam sunt ea molestias? At incidunt iusto soluta atque illo doloremque sunt dolorum, sapiente blanditiis sint eos illum adipisci ipsa temporibus optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="neumorphism-effect p-4 mb-4">
+                        <div class="About-img">
+                            <img src="Assets/portfolio_images/tech-images/bootstrap-logo-removebg-preview.png" alt="technology Image" />
+                        </div>
+                        <div class="About-content">
+                            <h3 class="About-Title">Bootstrap 4,5</h3>
+                            <p class="About-Discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quidem corporis illum hic totam sunt ea molestias? At incidunt iusto soluta atque illo doloremque sunt dolorum, sapiente blanditiis sint eos illum adipisci ipsa temporibus optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="neumorphism-effect p-4 mb-4">
+                        <div class="About-img">
+                            <img src="Assets/portfolio_images/tech-images/tailwind-css-logo-removebg-preview.png" alt="Tailwind-Css Image" />
+                        </div>
+                        <div class="About-content">
+                            <h3 class="About-Title">Tailwind Css</h3>
+                            <p class="About-Discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quidem corporis illum hic totam sunt ea molestias? At incidunt iusto soluta atque illo doloremque sunt dolorum, sapiente blanditiis sint eos illum adipisci ipsa temporibus optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="neumorphism-effect p-4">
+                        <div class="About-img">
+                            <img src="Assets/portfolio_images/tech-images/gsap-log-removebg-preview.png" alt="technology Image" />
+                        </div>
+                        <div class="About-content">
+                            <h3 class="About-Title">GSAP Animation</h3>
+                            <p class="About-Discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quidem corporis illum hic totam sunt ea molestias? At incidunt iusto soluta atque illo doloremque sunt dolorum, sapiente blanditiis sint eos illum adipisci ipsa temporibus optio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- About Me section -->
+
+    <!-- Work Section -->
+        <div class="container section-specing" id="Work">
+            <div class="row">
+                <div class="col mb-4">
+                    <span class="section_sub-title">projects</span>
+                    <h2 class="sectionTitle">my work </h2>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-6 col-lg-3 col-xl-4">
+                    <div class="neumorphism-effect p-4">
+                        <div class="card-img py-3">
+                            <img src="Assets/portfolio_images/tech-imges/html-logo-removebg-preview.png" alt="technology Image" />
+                        </div>
+                        <div class="card-content">
+                            <div class="d-flex align-items-center justify-content-between my-3">
+                                <a href="#">Fanta Website</a>
+                                <p class="mb-0">HTML, CSS, JavaScript, GSAP</p>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quidem corporis illum hic totam sunt ea molestias? At incidunt iusto soluta atque illo doloremque sunt dolorum, sapiente blanditiis sint eos illum adipisci ipsa temporibus optio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Work Section -->
+
+    <!-- Contact Me -->
+        <div class="container section-specing" id="Contact">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <span class="section_sub-title">get in touch</span>
+                    <h2 class="sectionTitle">contact me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="contact-about contact-border-radius neumorphism-effect p-3 p-lg-4 h-100">
+                        <div class="overflow-hidden mb-4 contact-border-radius">
+                            <img src="/Assets/portfolio_images/contact1.png" alt="contact Image" class="contact-border-radius contact-img"/>
+                        </div>
+
+                        <h4 class="contactAboutTitle">Nevine Acotanza</h4>
+                        <p class="contactSubTitle">Frontend Developer</p>
+                        <p class="contactSubTitle">I am available for freelance work. Connect with me via Email and call in to my account.</p>
+                        <p class="contactSubTitle mb-1">Phone :<a href="#" class="footer-Contact ps-1">+91 8007800032</a></p>
+                        <p class="contactSubTitle ">Email :<a href="#" class="footer-Contact ps-1"> zambrelove@gmail.com</a></p>
+                        
+                        <div class="mt-4 mt-md-5">
+                            <div class="Find-me">
+                                <p class="text-uppercase hero-contact-title footer-contact-details">find with me</p>
+                                <ul class="ps-0 mb-0 d-flex  gap-4">
+                                    <li><a href="#" class="neumorphism-effect social-box" title="gitHub-link"><i class="fa-brands fa-github"></i></a></li>
+                                    <li><a href="#" class="neumorphism-effect social-box" title="linked-in link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="contact-form contact-border-radius neumorphism-effect p-3 p-lg-4 mt-5 mt-md-0 h-100">
+                        <form>
+                            <div class="d-lg-flex align-items-center justify-content-between mb-4 first-input">
+                                <div class="col-12 col-lg-6 mb-2 mb-md-3 mb-lg-0">
+                                    <label for="userName" class="mb-2 mb-lg-3 d-inline-block">your name</label><br>
+                                    <input type="text" name="userName" id="userName" class="px-3 w-full" required>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label for="userPhone" class="mb-2 mb-lg-3 d-inline-block">your phone</label><br>
+                                    <input type="tel" maxlength="10" name="userPhone" id="userPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="px-3 w-full" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-2 mb-md-3 mb-lg-4">
+                                <label for="userEmail" class="mb-2 mb-lg-3 d-inline-block">email</label><br>
+                                <input type="email" name="Email" id="userEmail" class="px-3" required>
+                            </div>
+                        
+                            <div class="mb-2 mb-md-3 mb-lg-4">
+                                <label for="Subject" class="mb-2 mb-lg-3 d-inline-block">subject</label><br>
+                                <input type="text" name="text" id="Subject" class="px-3" required>
+                            </div>
+
+                            <div class="mb-2 mb-md-3 mb-lg-4">
+                                <label for="Msg" class="mb-2 mb-lg-3 d-inline-block">your message</label><br>
+                                <textarea name="msg" class="p-3" id="Msg"></textarea>
+                            </div>
+                            <button type="submit" class="theme-text p-3 w-full d-block mb-4" onclick="sendInformation()" >send massage <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Contact Me -->
+
+    <!-- Sticky What's Btn -->
+        <a href="#" class="sticky-whats-Up" title="What's btn"><i class="fa-brands fa-whatsapp"></i></a>
+    <!-- Sticky What's Btn -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="/Assets/index.js"></script>
+</body>
+</html>
