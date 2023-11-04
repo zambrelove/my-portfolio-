@@ -387,7 +387,13 @@
 
 
 /* ===================================================== Media Quries Start for some external Styling Start ===================================================== */
-   
+    
+    @media(prefers-color-scheme:dark){
+        .neumorphism-effect{
+            background: linear-gradient(145deg, #1e2024, #23272b);
+            box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; ;
+        }
+    }
 
     @media screen and (min-width: 768px) {
         .section-specing{
